@@ -1,13 +1,11 @@
-package com.example.springramadhan.repository;
+package com.example.springramadhan.service;
 
 import java.util.List;
 
 import com.example.springramadhan.dto.TahunAndNilai;
 import com.example.springramadhan.model.Skripsi;
 
-
-
-public interface ISkripsiRepository {
+public interface ISkripsiService {
 	public Skripsi insert(Skripsi skripsi);
 	
 	public List<Skripsi> getBelowYear(int tahun);

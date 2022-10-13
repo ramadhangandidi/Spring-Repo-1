@@ -9,12 +9,12 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "t_skripsi")
+@Table(name = "tb_skripsi")
 @Data
 public class Skripsi {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Auto increment
 	private int id;
 	private String judul;
 	private int nilai;
